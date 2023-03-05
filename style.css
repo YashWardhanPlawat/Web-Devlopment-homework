@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: linear-gradient(90deg, #474E68 0%, #50577A 25%, #6B728E 100%);
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main aside"
+        "footer footer footer";
+}
+
+nav ul {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 20px;
+    justify-content: center;
+    justify-items: center;
+    list-style-type: none;
+    background-image: linear-gradient(90deg, #8f0756 0%, #d6367e 35%, #5e68f7 100%);
+    height: 3.5em;
+    padding: 20px;
+    width: 100%;
+}
+
+nav a {
+    color: #e4e4e4;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+
+a:hover {
+    background: #dc24ecde;
+    color: #03f34b;
+    transition: 0.5s;
+
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #28b6ee;
+    margin: 0 auto;
+    animation: animate 3s linear infinite;
+    font-family: 'Khula', sans-serif;
+    text-shadow:
+        0 0 20px #a399a3,
+        0 0 12px #bdb1bbee,
+        0 0 50px rgba(191, 176, 192, 0.856);
+    grid-area: header;
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(360deg);
+
+    }
+}
+
+p {
+    font-size: 50px;
+    justify-content: space-between;
+
+}
+
+.image1 {
+    border-style: solid;
+    border-color: #f303f3;
+    width: 25em;
+    float: right;
+    border-radius: 5%;
+}
+
+header {
+    color: white;
+    grid-area: header;
+}
+
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    color: white;
+    grid-area: main;
+}
+
+aside {
+    color: #ffffff;
+    grid-area: aside;
+}
+
+footer {
+    margin-top: 23em;
+    color: white;
+    grid-area: footer;
+}
+
+.image2 {
+    width: 40%;
+    padding: 5px;
+    height: 350px;
+    justify-content: center;
+    justify-items: center;
+    background-size: 100% 100%;
+    place-items: center;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.contact {
+    padding: 20px;
+    margin: 10px;
+    grid-area: aside;
+}
+
+input {
+    display: grid;
+    width: 200px;
+    border-radius: 9px;
+}
