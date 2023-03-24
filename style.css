@@ -81,7 +81,7 @@ p {
 .image1 {
     border-style: solid;
     border-color: #f303f3;
-    width: 25em;
+    width: 30em;
     float: right;
     border-radius: 5%;
 }
@@ -113,15 +113,21 @@ footer {
 }
 
 .image2 {
-    width: 400px;
-    padding: 5px;
-    height: 350px;
-    justify-content: center;
-    justify-items: center;
-    background-size: 100% 100%;
-    place-items: center;
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    grid-area: main;
+    float: left;
+    width: 33%;
+    padding: 10px;
+    height: auto;
+    
 }
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
 
 
 
@@ -269,4 +275,10 @@ iframe{
     width: 320px;
     margin-top: 140px;
     height: 350px;
+}
+
+h3{
+    font-family:cursive;
+    padding-left: 10px;
+    font-size: 30px;
 }
