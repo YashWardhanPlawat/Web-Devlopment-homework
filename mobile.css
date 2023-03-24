@@ -142,16 +142,25 @@ footer {
     grid-area: footer;
 }
 
-.image2{
-    padding: 2px;
-    width: 25em;
-    border-radius: 5%;
+.image2 {
+    grid-area: main;
+    float: left;
+    padding: 10px;
+    height: auto;
+    
 }
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+
 
 .contact {
     padding: 20px;
     margin: 20px;
-    grid-area: aside;
 }
 
 input {
@@ -214,7 +223,7 @@ ul{
 	font-weight: 300;
 	color: #bbbbbb;
 	display: block;
-	transition: all 0.3s ease;
+	transition: all 0.5s ease;
 }
 .footer-col ul li a:hover{
 	color: #ffffff;
@@ -235,18 +244,6 @@ ul{
 .footer-col .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;
-}
-
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
 }
 
 .contact{
@@ -303,14 +300,15 @@ ul{
     color: #ffffff;
   }
 
-  iframe{
-    padding-top: 70px;
-    width: 320px;
-    margin-top: 140px;
-    height: 350px;
+iframe{
+    padding-top: 4.375em;
+    width: 20em;
+    margin-top: 8.75em;
+    height: 21.875em;
 }
+
 h3{
     font-family:cursive;
-    padding-left: 5px;
-    font-size: 24px;
+    padding-left: 10px;
+    font-size: 30px;
 }
