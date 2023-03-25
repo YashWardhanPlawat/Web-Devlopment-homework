@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -38,6 +38,7 @@ body {
 }
 
 .showNav {
+    grid-area: header;
     height: 1.1em;
     width: 1.25em;
     display: grid;
