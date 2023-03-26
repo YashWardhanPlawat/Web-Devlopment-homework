@@ -398,4 +398,30 @@ img {
     text-align: left;
     padding-bottom: 10px;
   }
-  
+
+.progress{
+
+    display: inline-flex;
+    align-items:flex-start;
+    flex-direction: column;
+  }
+.progress-text  {
+    padding-left: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+.progress-img{
+    float: left;
+    border-radius: 5px;
+    padding-left: 15px;
+    max-width: 500px;
+}
+
+.arrow{
+    width: 500px;
+    height: 40px;
+}

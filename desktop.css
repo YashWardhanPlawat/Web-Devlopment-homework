@@ -1,14 +1,16 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
-main{
+
+main {
     display: grid;
     grid-template-columns: 90% 10%;
 }
+
 body {
     min-height: 100vh;
     font-family: 'Roboto Condensed', sans-serif;
@@ -107,7 +109,7 @@ aside {
 }
 
 footer {
-    margin-top:auto;
+    margin-top: auto;
     color: white;
     grid-area: footer;
 }
@@ -121,7 +123,7 @@ footer {
 
 }
 
-.row::after{
+.row::after {
     content: "";
     clear: both;
     display: table;
@@ -138,121 +140,137 @@ input {
 }
 
 
-h4{
+h4 {
     color: #8a8b8b;
     font-size: 20px;
 }
 
 
-.container{
-	margin:auto;
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-ul{
-	list-style: none;
-}
-.footer{
-    position: sticky;
-    top: 100%;
-	background-color: #24262b;
-    padding: 30px 0;
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #e91e63;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-}
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
-}
-.footer-col ul li a{
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.5s ease;
-}
-.footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
-}
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
+.container {
+    margin: auto;
 }
 
-.contact{
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    position: sticky;
+    top: 100%;
+    background-color: #24262b;
+    padding: 30px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.contact {
     background-size: cover;
     padding: 40px 0;
-  }
-  .contact h4{
+}
+
+.contact h4 {
     font-size: medium;
     text-align: center;
     color: #ddd;
-  }
-  .contactform{
+}
+
+.contactform {
     max-width: 37.5em;
     margin: auto;
     padding: 0 10px;
     overflow: hidden;
-  }
-  
-  .formtext{
+}
+
+.formtext {
     display: block;
     width: 100%;
     box-sizing: border-box;
     margin: 16px 0;
     border: 0;
-    background:  rgba(0, 247, 255, 0.055);
+    background: rgba(0, 247, 255, 0.055);
     padding: 20px 40px;
     outline: none;
     color: #ffffff;
     transition: 0.5s;
-  }
-  .formtext:focus{
+}
+
+.formtext:focus {
     box-shadow: 0 0 10px 4px #ffffff;
-  }
-  textarea.formtext{
+}
+
+textarea.formtext {
     resize: none;
     height: 120px;
     border-radius: 10px;
-  }
-  .formbtn{
+}
+
+.formbtn {
     float: right;
     border: 0;
     background-image: linear-gradient(90deg, #37498a 0%, #142ead 25%, #12215c 100%);
@@ -261,24 +279,25 @@ ul{
     border-radius: 20px;
     cursor: pointer;
     transition: 0.5s;
-  }
-  .formbtn:hover{
+}
+
+.formbtn:hover {
     background: #3346f3;
-  }
+}
 
-  ::-webkit-input-placeholder{
+::-webkit-input-placeholder {
     color: #ffffff;
-  }
+}
 
-iframe{
+iframe {
     padding-top: 4.375em;
     width: 20em;
     margin-top: 8.75em;
     height: 21.875em;
 }
 
-h3{
-    font-family:cursive;
+h3 {
+    font-family: cursive;
     padding-left: 10px;
     font-size: 30px;
 }
@@ -287,7 +306,7 @@ h3{
     padding-top: 15px;
     padding-bottom: 10px;
     padding-left: 30px;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
@@ -332,39 +351,67 @@ img {
     object-fit: cover;
 }
 
-.gta{
-    width:100%;
+.gta {
+    width: 100%;
     height: 300px;
 }
 
 .text ul {
     margin-top: 10px;
     padding-left: 20px;
-  }
-  
-  .text ul li {
-    margin-bottom: 5px;
-  }
-  
-  @media (max-width: 800px) {
-    .card {
-      flex-direction: column;
-    }
-  }
+}
 
-  .headline  {
+.text ul li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 800px) {
+    .card {
+        flex-direction: column;
+    }
+}
+
+.headline {
     padding-left: 5px;
     display: inline-flex;
-    font-size: 40px;
+    font-size: 30px;
     color: #00fdb1d5;
     flex-wrap: wrap;
+    padding-bottom: 10px;
 }
-  
-  .experience {
+
+.experience {
     padding-left: 15px;
-    font-size: 35px;
+    font-size: 20px;
     align-self: start;
     text-align: left;
     padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.progress{
+
+    display: inline-flex;
+    align-items:flex-start;
+    flex-direction: column;
   }
-  
+.progress-text  {
+    padding-left: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+.progress-img{
+    float: left;
+    border-radius: 5px;
+    padding-left: 15px;
+    max-width: 500px;
+}
+
+.arrow{
+    width: 500px;
+    height: 40px;
+}
